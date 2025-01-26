@@ -82,28 +82,6 @@
         <sonar.language>java</sonar.language>
         <libsass-maven-plugin.version>0.2.26</libsass-maven-plugin.version>
 
-
-    </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>4.0.1</version>
-            </plugin>
-        </plugins>
-    </build>
-
-    <!-- Other properties and tags -->
-
-    <build>
-        <defaultGoal>install</defaultGoal>
-        <finalName>petclinic</finalName>
-        <!-- ... other build configurations ... -->
-    </build>
-
-    
         <!-- Docker image -->
         <docker.jib-maven-plugin.version>3.3.1</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
@@ -618,6 +596,11 @@
             <build>
                 <plugins>
                     <plugin>
+                        
+                        <groupId>org.springframework.boot</groupId>  
+                        <artifactId>spring-boot-maven-plugin</artifactId>  
+                        <version>4.0.1</version> 
+                        
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
                         <executions>
