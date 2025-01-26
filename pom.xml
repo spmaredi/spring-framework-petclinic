@@ -83,7 +83,7 @@
         <libsass-maven-plugin.version>0.2.26</libsass-maven-plugin.version>
 
 
-            <build>  
+    <build>  
         <plugins>  
             <plugin>  
                 <groupId>org.springframework.boot</groupId>  
